@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>LearN</title>
+  <title>Learnix</title>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,57 +10,340 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./asset/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="home">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container `">
-        <a class="navbar-brand" href="#">LearNix</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+  <!-- navbar start -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg js-sticky-nav bg-primary  ">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2 mx-3 text-white" id="home" href="#">Learnix</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav  ms-auto mx-5 ">
+            <li class="nav-item me-3">
+              <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Courses</a>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="#course">Courses</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="#staff">Our Staff</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="#about">About</a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link bi bi-lock-fill" href="#">Log In</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link bi bi-person-fill" href="#">Register</a>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="./asset/pages/contact.html">Contact</a>
             </li>
 
-
+            <li class="nav-item me-3">
+              <a href="./asset/pages/register.html" class="bi bi-person-fill nav-link text-white"> Register</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+  </header>
 
+  <!-- navbar end -->
 
+  <!-- home content start -->
 
-    <!-- <div class="background">
-    <div class="overlay"></div>
-    <div class="text-container">
-      <h1></h1>
-      <p>Your descriptive text goes here. Add more content if needed.</p>
+  <section class="container mt-2">
+    <div class="row align-items-center">
+      <!-- Text Content -->
+      <div class=" homeBox col-lg-6 col-md-12" data-aos="fade-right">
+        <h1 class="glowIn mt-5 p-5 ">An Investment In Knowledge <br>Pays The Best Interest.</h1>
+        <h4 class="glowIn mt-5 ms-5 ">A Good Teacher Is Like A Candle, It Consumes<br>Itself To Light The Way For
+          Others.</h4>
+      </div>
+      <!-- Image Content -->
+      <div class="col-lg-6 col-md-12 ms-5" data-aos="fade-left" data-aos-duration="3000">
+        <img src="./asset/img/education-tree-concept-vector-removebg-preview.png" class="img-fluid "
+          alt="Education tree concept illustration">
+      </div>
     </div>
-  </div> -->
+  </section>
+
+  <!--home content end  -->
+
+  <!-- courses start -->
+
+  <section id="course">
+    <div class="container py-5">
+      <div class="container">
+        <div class="text-center" data-aos="fade-left" data-aos-duration="2000">
+          <h6 class="section-title text-center text-primary px-3">Courses</h6>
+          <h1 class="mb-5">Popular Courses</h1>
+        </div>
+        <div class="row g-4 justify-content-center" data-aos="fade-right" data-aos-duration="2000">
+          <div class="col-lg-4 col-md-6">
+            <div class="course-item bg-light">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="./asset/img/course-1.jpg" alt="">
+                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                  <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 30px;">Join Now</a>
+                </div>
+              </div>
+              <div class="text-center p-4 pb-0">
+                <h3 class="mb-0">$149.00</h3>
+                <div class="mb-3">
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-half text-primary"></small>
+                </div>
+                <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="course-item bg-light">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="./asset/img/course-2.jpg" alt="">
+                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                  <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 30px;">Join Now</a>
+                </div>
+              </div>
+              <div class="text-center p-4 pb-0">
+                <h3 class="mb-0">$149.00</h3>
+                <div class="mb-3">
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-half text-primary"></small>
+                  <small class="bi bi-star text-primary"></small>
+                </div>
+                <h5 class="mb-4">Graphic Design</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="course-item bg-light">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="./asset/img/course-3.jpg" alt="">
+                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                  <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 30px;">Join Now</a>
+                </div>
+              </div>
+              <div class="text-center p-4 pb-0">
+                <h3 class="mb-0">$149.00</h3>
+                <div class="mb-3">
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star-fill text-primary"></small>
+                  <small class="bi bi-star text-primary"></small>
+                </div>
+                <h5 class="mb-4">Digital Marketing</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- courses end -->
+
+  <!-- our staff start -->
+
+  <section class="" id="staff">
+    <div class="container py-5">
+      <div class="container">
+        <div class="text-center" data-aos="fade-down" data-aos-duration="2000">
+          <h6 class="section-title  text-center text-primary px-3">Instructors</h6>
+          <h1 class="mb-5">Expert Instructors</h1>
+        </div>
+        <div class="row g-4" data-aos="zoom-in-up" data-aos-duration="2000">
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item bg-primary-subtle ">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="./asset/img/staff_1.jpg" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-facebook"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-twitter"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">JOHN</h5>
+                <small>Trainer</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item bg-primary-subtle">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="./asset/img/staff_2.jpg" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-facebook"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-twitter"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">ALICE</h5>
+                <small>Trainer</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item bg-primary-subtle">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="./asset/img/staff_3.jpg" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-facebook"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-twitter"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">MARIA</h5>
+                <small>Trainer</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item bg-primary-subtle">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="./asset/img/staff_4.jpg" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-facebook"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-twitter"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">JACK</h5>
+                <small>Trainer</small>
+              </div>
+            </div>
+          </div>
+
+  </section>
+
+  <!-- our staff end -->
+
+  <!-- about start -->
+
+  <section class="container mt-2" id="about">
+    <div class="row align-items-center">
+      <div class="text-center mt-5 ">
+        <h1>ABOUT US</h1>
+      </div>
+      <!-- Image Content -->
+      <div class="col-lg-6 col-md-12 ms-5" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+        <img src="./asset/img/about_1.jpg" class="img-fluid " alt="Education tree concept illustration">
+      </div>
+      <!-- Text Content -->
+      <div class=" homeBox col-lg-6 col-md-12" data-aos="fade-left" data-aos-duration="2000">
+        <p class="fs-5 mx-auto mt-5 p-5">"Welcome to Learnix, your gateway to a brighter future! We are committed to
+          providing
+          learners of all ages with accessible, high-quality education designed to inspire growth, creativity, and
+          lifelong learning. Whether you're looking to develop new skills, advance your career, or explore a passion,
+          our diverse range of courses and resources ensures there's something for everyone. With expert instructors,
+          innovative tools, and a supportive community, we empower you to achieve your goals and
+          unlock your full potential. Join us today and start your journey toward success!"</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- about end -->
+
+  <!-- testimonial start -->
+  <section id="testimonial"></section>
+
+
+  <!-- Testimonial End -->
+
+
+  <!-- Footer Start -->
+
+  <div class="container-fluid bg-dark text-light ">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white">Quick Link</h4>
+          <a class="btn btn-link  text-white text-decoration-none" href="">About </a>
+          <a class="btn btn-link text-white text-decoration-none" href="">Contact</a>
+          <a class="btn btn-link text-white text-decoration-none" href="">Privacy Policy</a>
+          <a class="btn btn-link text-white text-decoration-none" href="">Terms & Condition</a>
+          <a class="btn btn-link text-white text-decoration-none" href="">FAQs & Help</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Contact</h4>
+          <p class="mb-2"><i class="bi bi-geo-alt-fill me-3"></i>123 Street, New York, USA</p>
+          <p class="mb-2"><i class="bi bi-telephone-fill me-3"></i>+012 78 12345</p>
+          <p class="mb-2"><i class="bi bi-envelope-fill me-3"></i>Learnix@gmail.com</p>
+          <div class="d-flex mt-4">
+            <a class="btn btn-outline-light btn-social" href=""><i class="bi bi-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social ms-2" href=""><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-outline-light btn-social ms-2" href=""><i class="bi bi-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social ms-2" href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Gallery</h4>
+          <div class="row g-2 pt-2">
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="./asset/img/gallery_1.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="./asset/img/gallery_2.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="./asset/img/gallery_3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Newsletter</h4>
+          <p></p>
+          <div class="position-relative mx-auto" style="max-width: 400px;">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col text-center mb-3">
+            &copy; <a class=" text-decoration-none text-light " href="#">Learnix</a>, All Right Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- Footer End -->
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -71,6 +354,13 @@
     crossorigin="anonymous"></script>
 
   <script src="./asset/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
